@@ -40,7 +40,7 @@ body {
 	line-height: 53px;
 }	
 
-.first-paragraph::first-letter{
+p:first-of-type:first-letter {
 	font-family: 'Playfair Display', serif;
 	font-size: 11rem; 
     color: #171717; 
@@ -49,13 +49,16 @@ body {
     margin: 0px 40px 0px -4px;
 }
 
-.blockquote-container{
+.page blockquote {
 	display: inline-block;
 	position: relative;
-
+	font-style: oblique;
+	font-size: 1.8rem;
+	margin: 0;
+	padding: 35px 50px;
 }
 
-.blockquote-container:before { 
+blockquote:before { 
 	position: absolute;
     top: 0px;
     left: 0px;
@@ -65,14 +68,6 @@ body {
     color: rgba(17,17,17, 0.7);
 
 }    
-
-.page blockquote {
-	font-style: oblique;
-	font-size: 1.8rem;
-	margin: 0;
-	padding: 35px 50px;
-}
-
 
 .button {
 	display: inline-block;

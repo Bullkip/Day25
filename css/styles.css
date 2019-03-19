@@ -51,21 +51,28 @@ body {
 
 .blockquote-container{
 	display: inline-block;
+	position: relative;
 
 }
+
+.blockquote-container:before { 
+	position: absolute;
+    top: 0px;
+    left: 0px;
+    content: open-quote;
+    font-size: 6rem;
+    line-height: 0.6;
+    color: rgba(17,17,17, 0.7);
+
+}    
 
 .page blockquote {
 	font-style: oblique;
-	font-size: 2rem;
-	position: relative;
+	font-size: 1.8rem;
 	margin: 0;
-	padding-bottom: 35px;
+	padding: 35px 50px;
 }
 
-blockquote:before {  
-    content: open-quote;  
-    font-size: 6rem;     
-}    
 
 .button {
 	display: inline-block;
